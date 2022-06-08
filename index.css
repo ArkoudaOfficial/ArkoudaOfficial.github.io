@@ -1,0 +1,118 @@
+﻿@import url('css2');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+#langText,
+
+#item1 {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 10px;
+    color: rgba(255, 255, 255, .70);
+}
+
+#item1 {
+    font-size: 35px;
+}
+
+
+#langText {
+    animation: animated-text 2s steps(30, end) 1s 1 normal both;
+}
+
+#item1 {
+    animation: animated-text-big 1s steps(30, end) 1s 1 normal both;
+}
+
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 700px;
+    }
+}
+
+@keyframes animated-text-big {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 1500px;
+    }
+}
+.videoInsert {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#player {
+    width: 350px;
+    height: 50px;
+    position: relative;
+    margin: 0 auto;
+    top: 80px;
+}
+
+i {
+    position: absolute;
+    margin-top: -6px;
+    color: #666;
+}
+
+i.fa-volume-down {
+    margin-left: -8px;
+
+}
+
+i.fa-volume-up {
+    margin-right: -8px;
+    right: 0;
+}
+
+
+#volume {
+    position: absolute;
+    left: 24px;
+    margin: 0 auto;
+    height: 5px;
+    width: 300px;
+    background: #555;
+    border-radius: 15px;
+
+}
+
+.ui-slider-range-min {
+    height: 5px;
+    width: 300px;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.ui-slider-handle {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #FFF;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -8px;
+    cursor: pointer;
+    outline: none;
+}
